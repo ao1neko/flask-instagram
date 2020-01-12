@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarColor01" aria-label="Toggle navigation" type="button" data-target="#navbarColor01" data-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/page1">img_list</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">edit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="text-center">Instagram ?</h1>
+    </div>
+  </div>
+<div class="container">
+<div class="row">
+  <p></p>
+</div>
+</div>
+  <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>image_list</h2>
+          <p>写真とメッセージの保存、編集が可能です</p>
+          <p>instagramを意識して制作しました</p>
+          <p><button type="button" class="btn btn-primary btn-lg" onclick="location.href='/page1'"> details &raquo;</button></p>
+        </div>
+      </div>
+      
+{% endblock %}
+

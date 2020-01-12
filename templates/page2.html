@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--上部装飾-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarColor01" aria-label="Toggle navigation" type="button" data-target="#navbarColor01" data-toggle="collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/page1">image_list</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">edit<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<p></p>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6"><img src="{{ img_url }}" alt="a" width="500" height="500" ></div>
+    <div class="col-md-6"><h2>{{text}}</h2></div>
+    </div>
+</div>
+
+
+<div class="container">
+        <p></P>
+        <form action="/sql" method="post" >
+              <input type="hidden" name="url" value="{{img_url}}">
+              <input type="text" class="form-control" id="exampleInputEmail1"  name="text" placeholder="input">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+</div>
+
+
+{% endblock %}
