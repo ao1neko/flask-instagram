@@ -2,5 +2,5 @@
 instagramのように画像にコメントを付けて保存が可能
 
 # Usage
-`pip install Flask`
+`pip install Flask`  
 `python server.py`
