@@ -5,4 +5,4 @@ instagramのように画像にコメントを付けて保存が可能
 # Usage
 `pip install Flask`  
 `python server.py`  
-ブラウザで　http://127.0.0.1:8080　にアクセスしてHTMLファイルの内容を表示。
+ブラウザで「http://127.0.0.1:8080」にアクセスしてHTMLファイルの内容を表示。
